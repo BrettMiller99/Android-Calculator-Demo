@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base button style for calculator buttons -->
+    <style name="CalculatorButtonBase" parent="Widget.MaterialComponents.Button">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="cornerRadius">40dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+
+    <!-- Style for number buttons (dark gray) -->
+    <style name="CalculatorNumberButton" parent="CalculatorButtonBase">
+        <item name="backgroundTint">@null</item>
+        <item name="android:background">@drawable/button_number_background</item>
+    </style>
+
+    <!-- Style for function buttons (light gray) -->
+    <style name="CalculatorFunctionButton" parent="CalculatorButtonBase">
+        <item name="backgroundTint">@null</item>
+        <item name="android:background">@drawable/button_function_background</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <!-- Style for operation buttons (orange) -->
+    <style name="CalculatorOperationButton" parent="CalculatorButtonBase">
+        <item name="backgroundTint">@null</item>
+        <item name="android:background">@drawable/button_operation_background</item>
+    </style>
+</resources>
