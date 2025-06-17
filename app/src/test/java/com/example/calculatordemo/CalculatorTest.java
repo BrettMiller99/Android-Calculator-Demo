@@ -19,15 +19,15 @@ public class CalculatorTest {
     
     @Test
     public void testAddition() {
-        double result = calculator.calculate(5, 3, Calculator.OPERATION_ADD);
+        double result = calculator.calculate(5, 5, Calculator.OPERATION_ADD);
         assertEquals(8, result, 0);
         
         // Test with negative numbers
-        result = calculator.calculate(-5, 3, Calculator.OPERATION_ADD);
+        result = calculator.calculate(-5, 5, Calculator.OPERATION_ADD);
         assertEquals(-2, result, 0);
         
         // Test with decimal numbers
-        result = calculator.calculate(5.5, 3.3, Calculator.OPERATION_ADD);
+        result = calculator.calculate(5.5, 5, Calculator.OPERATION_ADD);
         assertEquals(8.8, result, 0.001);
     }
     
